@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //This is another way of creating an object
+            function plane(newMake, newModel, newYear){
+                this.make = newMake;
+                this.model = newModel;
+                this.year = newYear;                
+            }
+
+            var myPlane = new plane("Cessna","Centurnian","1970");
+            var myPlane2 = new plane("Beechcraft","Bonanza","2001");
+
+            for(var name in myPlane){
+                document.write(name+": "+myPlane[name]+"<br/>");
+            }
+        </script>
+    </body>
+</html>

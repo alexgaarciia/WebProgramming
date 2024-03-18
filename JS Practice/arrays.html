@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var myList = new Array(24, "bread", true);
+            for (elem in myList){
+                document.write(myList[elem]);
+            }
+
+            //We can create a constant array
+            const cars = ["Saab","Volvo","BMW"];
+            cars[0] = "Toyota";
+            cars.push("Audi");
+
+            for (elem in cars){
+                document.write(cars[elem]);
+            }
+        </script>
+    </body>
+</html>
