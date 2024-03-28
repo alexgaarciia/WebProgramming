@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const greet = () => "Hello, World!";
+            console.log(greet());
+
+            const double = number => number*2;
+            console.log(double(4));
+
+            const add = (a, b) => {
+                return a + b;
+            }
+            console.log(add(5, 3));
+            
+            const createPerson = (name, age) => ({
+                name: name,
+                age: age
+            })
+            console.log(createPerson("Alice", 30));
+
+            const numbers = [1, 2, 3, 4];
+            const squares = numbers.map(x => x * x);
+            console.log(squares);
+
+            class Button {
+                constructor(label){
+                    this.label = label;
+                    document.addEventListener("click", () => {
+                        console.log(this.label);
+                    });
+                }
+            }
+            const myButton = new Button("Click Me!")
+            
+        </script>
+    </body>
+</html>
