@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event handling with radio buttons</title>
+    </head>
+    <body>
+        <h4>Cessna single-engine airplane descriptions</h4>
+        <form id="myForm">
+            <label>
+                <input type="radio" name="planeButton" onclick="planeChoice(152)">
+                Model 152
+            </label><br>
+
+            <label>
+                <input type="radio" name="planeButton" onclick="planeChoice(172)">
+                Model 172 (Skyhawk)
+            </label><br>
+
+            <label>
+                <input type="radio" name="planeButton" onclick="planeChoice(182)">
+                Model 182 (Skylane)
+            </label><br>
+
+            <label>
+                <input type="radio" name="planeButton" onclick="planeChoice(210)">
+                Model 210 (Centurian) 
+            </label>
+        </form>
+
+        <script>
+            function planeChoice(plane){
+                switch (plane){
+                    case 152:
+                        alert("A small two-place airplane for flight training");
+                        break;
+                    case 172:
+                        alert("The smaller of two four-place airplanes");
+                        break;
+                    case 182:
+                        alert("The larger of two four-place airplanes");
+                        break;
+                    case 210:
+                        alert("A six-place high-performance airplane");
+                        break;
+                    default:
+                        alert("Error in JavaScript function planeChoice");
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
