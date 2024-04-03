@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moving a picture with input</title>
+        <style>
+            #nebula{
+                position: absolute;
+                top: 300px;
+                left: 100px;
+            }
+        </style>
+        <script src="mover.js"></script>
+    </head>
+    <body>
+        <form action="">
+            <p>
+                <label>
+                    x coordinate:
+                    <input type="number" id="movex" value="200">
+                </label><br>
+                <label>
+                    y coordinate:
+                    <input type="number" id="movey" value="100">
+                </label><br>
+                <input type="button" value="Move it" onclick="
+                moveImage('nebula', document.getElementById('movex').value, document.getElementById('movey').value)">
+            </p>
+        </form>
+        <div>
+            <img id="nebula" src="crab-nebula-552300.jpg" alt="Picuture of Nebula">
+        </div>        
+    </body>
+</html>
