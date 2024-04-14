@@ -3,9 +3,9 @@
     height: 300px;
     width: 300px;
     background-color: skyblue;
-    position: fixed;
-    top: 0px;
-    right: 0px;
+    position: relative;
+    top: 10px;
+    left: 150px;
 
 }
 
