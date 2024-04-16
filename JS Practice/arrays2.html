@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>An exercise for Merging arrays, and split, splice, slice, index of</title>
+    </head>
+    <body>
+        
+        <script>
+            // Exercise 1: Create 3 arrays
+             const sNames = ["Alice", "Alexander", "Laurine", "Sarah"];
+             const cNames = ["MATH361", "COMP425", "COMP472", "SOEN287", "MANA201", "MANA202"];
+             const studentCourses = [{student: "Alice", courses: ["MATH361", "SOEN287"]}, 
+             {student: "Alexander", courses: ["MATH361", "COMP472"]}, 
+             {student: "Laurine", courses: ["MANA201", "MANA2022"]},
+             {student: "Sarah", courses: ["COMP425", "COMP472"]}];
+
+            // Exercise 2: 
+            // A)
+             let courseSchedule = "";
+             for(elem in studentCourses){
+                let courses = "";
+                let student = studentCourses[elem]
+                let studentName = student.student;
+                let enrolled = student.courses;
+                courseSchedule = courseSchedule + studentName + " is enrolled in " + enrolled + "\n";
+             }
+             console.log(courseSchedule);
+
+            // B)
+            let courseScheduleSplit = courseSchedule.split("\n");
+            console.log(courseScheduleSplit);
+
+            // C)
+            let words = "";
+            for(elem in courseScheduleSplit){
+                words = words + courseScheduleSplit[elem].split(" ");
+            }
+            console.log(words);
+        </script>
+    </body>
+</html>
